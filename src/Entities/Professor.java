@@ -19,10 +19,12 @@ public class Professor extends Pessoa{
         this.areaDeFormacao = areaDeFormacao;
     }
 
-
-    public BigDecimal calcularNota(Aluno aluno){
+    /*
+    public double calcularNota(Aluno aluno){
         BigDecimal media;
         media = aluno.getN1().add(aluno.getN2()).add(aluno.getN3()).add(aluno.getN4()).divide(new BigDecimal(4));
         return media;
     }
+
+     */
 }

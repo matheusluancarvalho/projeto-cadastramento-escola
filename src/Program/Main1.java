@@ -66,6 +66,7 @@ public class Main1 {
 
         System.out.println("Professor ");
 
+        /*
 
         BigDecimal media = new BigDecimal(0);
         BigDecimal n1 = new BigDecimal(6);
@@ -80,7 +81,11 @@ public class Main1 {
         media = n1.add(n2).add(n3).add(n4).divide(new BigDecimal(4));
         //media = media.divide(new BigDecimal(4));
 
+
         System.out.println(media);
+
+         */
+
         // aluno.setNotas(...);
 
         //turma(Professor, Alunos, materia)
