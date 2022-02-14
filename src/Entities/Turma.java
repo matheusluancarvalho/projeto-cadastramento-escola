@@ -61,13 +61,19 @@ public class Turma {
     }
 
 
-    public void matricularAluno(Aluno aluno){
+    public boolean matricularAluno(Aluno aluno){
         if (aluno.getIdade() < 18 && turno == TurnoEnum.NOITE){
-            System.out.println("Aluno não pode ser matriculado");
+           //System.out.println("ALUNO(A) " + aluno.getNome() + " NÃO PODE SER CADASTRADO!");
+           //System.out.println("ALUNO(A) " + aluno.getNome() + " É MENOR DE IDADE PRA O TUNO NOTURNO!");
+            return false;
         } else {
             alunos.add(aluno);
-            System.out.println("Deu certo");
+            //System.out.println("ALUNO(A) " + aluno.getNome() + " FOI CADASTRADO COM SUCESSO!");
+            return true;
         }
     }
+
+
+
 
 }

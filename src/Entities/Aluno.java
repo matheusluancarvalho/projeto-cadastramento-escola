@@ -72,7 +72,19 @@ public class Aluno extends Pessoa{
         return media;
     }
 
+    public String aprovacao(){
+        if (mediaAluno(n1, n2, n3, n4) < 6){
+            System.out.println();
+            return "ALUNO(A) " + getNome() + " ESTÁ REPROVADO(A)!"
+                    + "\nMÉDIA: " + mediaAluno(n1, n2, n3, n4);
+        }else {
+            return "ALUNO(A) " + getNome() + " ESTÁ APROVADO(A)!"
+                    + "\nMÉDIA: " + mediaAluno(n1, n2, n3, n4);
+        }
+    }
 
+
+    /*
     public String toString(){
 
         if (mediaAluno(n1, n2, n3, n4) < 6){
@@ -81,6 +93,8 @@ public class Aluno extends Pessoa{
             return "Aprovado" + "\nMédia: " + mediaAluno(n1, n2, n3, n4);
         }
     }
+
+     */
 
 
 
